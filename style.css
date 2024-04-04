@@ -1,51 +1,59 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-body {
-    font-family: 'Open Sans', sans-serif;
+
+:root {
+    font-size: 62.5%;
+}
+
+html, body {
+    font-family: "Open Sans", sans-serif;
     text-align: center;
 }
 
-#hero {
-    width: 592px;
-    margin: 0 auto 72px;
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7.2rem;
+
+    padding: 0 2%;
+    margin-bottom: 7.2rem;
 }
 
-#hero img {
-    margin-bottom: 72px;
+img {
+    width: min(40rem, 100%);
 }
 
 h1 {
-    font-family: 'Inter', sans-serif;
-    font-size: 49px;
+    font-family: "Inter", sans-serif;
+    font-size: 4.9rem;
+    font-weight: 400;
     line-height: 56px;
-    font-weight: normal;
     color: #000;
 
-    margin-bottom: 32px;
+    margin-bottom: 3.2rem;
 }
 
 h1 span {
-    font-weight: bold;
+    font-weight: 700;
 }
 
 span, a {
-    color: #FF9900
+    color: #FF9900;
 }
 
-p, #footer {
-    font-size: 14px;
+p, footer {
+    font-weight: 400;
+    font-size: 1.4rem;
     line-height: 28px;
     color: #7d7987;
 }
 
-#footer {
-    margin-bottom: 33px;
-}
-
-#footer a + a {
-    margin-left: 28px;
+artigo p + p {
+    margin-top: 2.8rem;
 }
 
 .line {
@@ -55,7 +63,13 @@ p, #footer {
     margin: 0 auto 8px;
 }
 
+footer a + a {
+    margin-left: 2rem;
+}
+
+
 #balls {
+    width: 8rem;
     position: fixed;
     bottom: 0;
     right: 0;
